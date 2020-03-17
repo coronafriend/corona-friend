@@ -1,0 +1,31 @@
+{
+  "name": "corona-friend",
+  "version": "1.0.0",
+  "description": "Corona Friend",
+  "engines": {
+    "node": "12.13.1"
+  },
+  "main": "index.js",
+  "scripts": {
+    "start": "node server/src/server.js",
+    "heroku-postbuild": "cd client && npm install && npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.586.0",
+    "cors": "^2.8.5",
+    "csv-parser": "^2.3.0",
+    "dotenv": "^8.1.0",
+    "express": "^4.17.1",
+    "force-ssl-heroku": "^1.0.2",
+    "mongoose": "^5.6.11",
+    "morgan": "^1.9.1",
+    "nodemailer": "^6.3.1",
+    "react-router-dom": "^5.1.2",
+    "request": "^2.88.0",
+    "stripe": "^7.14.0"
+  }
+}
